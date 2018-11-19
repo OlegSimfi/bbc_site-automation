@@ -1,13 +1,13 @@
 const notifier = require('node-notifier');
 
-const baseUrl = 'http://www.bbc.com/';
+const baseUrl = 'http://www.bbc.com';
 
 if (process.env.SERVER === "prod") {
-    baseUrl = 'http://www.bbc.com/';
+    baseUrl = 'http://www.bbc.com';
 }
 
 const timeout = process.env.DEBUG ? 99999999 : 180000;
-const selenoidHost = process.env.SELENOID ? process.env.SELENOID : 'http://www.bbc.com/';
+const selenoidHost = process.env.SELENOID ? process.env.SELENOID : '127.0.0.1';
 
 exports.config = {
 

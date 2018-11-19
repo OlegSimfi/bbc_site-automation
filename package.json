@@ -4,14 +4,14 @@
   "description": "uiautotests",
   "main": "index.js",
   "scripts": {
-    "test-start": "wdio wdio.conf.js --suite searchUserByName,workFlowApliedInterviewingHired,workflowApliedInterviewingHired",
-    "test-single": "wdio wdio.conf.js --suite searchUserByName"
+    "test-start": "wdio wdio.conf.js --suite registrationByEmail",
+    "test-single": "registrationByEmail"
   },
   "repository": {
     "type": "git",
     "url": "https://github.com/OlegSimfi/oos-automation.git"
   },
-  "author": "OOC",
+  "author": "BBC",
   "license": "",
   "bugs": {
     "url": "http://www.bbc.com/"

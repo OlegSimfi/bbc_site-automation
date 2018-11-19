@@ -1,0 +1,31 @@
+{
+  "name": "BBC_Site",
+  "version": "0.0.1",
+  "description": "uiautotests",
+  "main": "index.js",
+  "scripts": {
+    "test-start": "wdio wdio.conf.js --suite searchUserByName,workFlowApliedInterviewingHired,workflowApliedInterviewingHired",
+    "test-single": "wdio wdio.conf.js --suite searchUserByName"
+  },
+  "repository": {
+    "type": "git",
+    "url": "https://github.com/OlegSimfi/oos-automation.git"
+  },
+  "author": "OOC",
+  "license": "",
+  "bugs": {
+    "url": "http://www.bbc.com/"
+  },
+  "homepage": "http://www.bbc.com/",
+  "dependencies": {},
+  "devDependencies": {
+    "chai": "^4.1.2",
+    "node-notifier": "^5.2.1",
+    "selenium-standalone": "^6.15.3",
+    "wdio-junit-reporter": "^0.4.4",
+    "wdio-mocha-framework": "^0.5.13",
+    "wdio-selenium-standalone-service": "0.0.10",
+    "wdio-spec-reporter": "^0.1.5",
+    "webdriverio": "^4.14.0"
+  }
+}

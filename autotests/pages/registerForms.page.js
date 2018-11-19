@@ -1,4 +1,5 @@
-class BirthForm {
+
+class BirthForms {
     get day() { return $('#day-input'); }
     get month() { return $('#month-input'); }
     get year() { return $('#year-input'); }
@@ -10,17 +11,37 @@ class BirthForm {
             this.day.setValue(day);
         }
         if (month) {
-            //  Enter date
+            //  Enter month
             this.month.setValue(month);
         }
         if (year) {
-            //  Enter date
+            //  Enter year
             this.year.setValue(year);
         }
-        // Submit filling
+        browser.pause(2000); // Wait for Submit button click
         this.submitButton.click();
-
     }
 }
 
-module.exports = new BirthForm();
+class EmailAndPasswordForm {
+    get email() { return $('#user-identifier-input'); }
+    get password() { return $('#password-input'); }
+    get submitButton() { return $('#submit-button'); }
+
+    fill(email, password) {
+        if (email) {
+            //  Enter the email address
+            this.email.setValue(email);
+        }
+
+        if (password) {
+            //  Enter the password
+            this.password.setValue(password);
+        }
+    }
+}
+
+module.exports = {
+    BirthForms : new BirthForms(),
+    EmailAndPasswordForm  : new EmailAndPasswordForm()
+};
